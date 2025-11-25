@@ -1,19 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./resources/scss/stylesheet.css">
-</head>
-<body>
-  <header>
-
-  </header>
-  <main>
-    <section></section>
-    <section></section>
-  </main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./resources/scss/stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <!--
+      <img loading="lazy" src="./resources/img/assets/header_fake.webp" alt="Хэдэр" />
+      -->
+      <div class="container">
+        <nav class="nav-top">
+          <div class="nav-top__left">
+            <div class="nav-top__item">
+              <div class="nav-top__menu"></div>
+            </div>
+            <div class="nav-top__item">
+              <img loading="lazy" src="" alt="Логотип Почта России" />
+            </div>
+            <div class="nav-top__item">
+              <a class="nav-top__link active" href="#">Частным лицам</a>
+              <a class="nav-top__link" href="#">Бизнесу</a>
+            </div>
+          </div>
+          <div class="nav-top__right">
+            <div class="nav-top__item">
+              <svg class="nav-top__icon">
+                <use></use>
+              </svg>
+              <a href="nav-top_link">Отделения</a>
+            </div>
+            <div class="nav-top__item">
+              <svg class="nav-top__icon">
+                <use></use>
+              </svg>
+              <a href="nav-top_link">Помощь</a>
+            </div>
+            <div class="nav-top__item">
+              <svg class="nav-top__icon">
+                <use></use>
+              </svg>
+              <a href="nav-top_link">Войти</a>
+            </div>
+          </div>
+        </nav>
+        <div class="decoration__border"></div>
+        <nav class="nav-links">
+          <ul class="nav-links__list">
+            <li class="nav-links__item">
+              <a href="#">Отправить</a>
+            </li>
+            <li class="nav-links__item">
+              <a href="#">Получить</a>
+            </li>
+            <li class="nav-links__item">
+              <a href="#">Платежи и переводы</a>
+            </li>
+            <li class="nav-links__item">
+              <a href="#">Услуги в отделениях</a>
+            </li>
+            <li class="nav-links__item">
+              <a href="#">Онлайн-сервисы</a>
+            </li>
+          </ul>
+          <div class="nav-links__search">Поиск</div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="background_blue">
+        <div class="container">
+          <div class="main-banner">
+            <div class="main-banner__wrap">
+              <div class="main-banner__inner">
+                <div class="main-banner__content">
+                  Для тех, кто отправляет </br>
+                  <span class="tpg__accent">от 5 посылок</span>
+                  в месяц
+                </div>
+                <button class="button tpg__btn">Воспользоваться услугой</button>
+              </div>
+              <div class="main-banner__image">
+                <img
+                  loading="lazy"
+                  src="./resources/img/assets/hero-banner-img.webp"
+                  alt="Изображение мужчины жонглирующий посылками"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container container__advantages_transform">
+          <div class="advantages">
+            <div class="block__title tpg__header">Преимущества</div>
+            <div class="advantages__list">
+              <div class="advantages__item background_gray">
+                <div class="advantages__logo">
+                  <img src="./resources/img/svg/box-done.svg" alt="Иконка посылка" />
+                </div>
+                <div class="advantages__title tpg__sub-header-2">Для физических лиц</div>
+                <div class="advantages__content">
+                  Отправляйте посылки без договора с Почтой России
+                </div>
+              </div>
+              <div class="advantages__item background_gray">
+                <div class="advantages__logo">
+                  <img src="./resources/img/svg/ar.svg" alt="Иконка дополненная реальность" />
+                </div>
+                <div class="advantages__title tpg__sub-header-2">Без очередей</div>
+                <div class="advantages__content">
+                  Оформляйте посылки онлайн и сдавайте в более чем 38 000 отделениях по всей стране
+                  без ожидания
+                </div>
+              </div>
+              <div class="advantages__item font-color-invers background_accent">
+                <div class="advantages__logo">
+                  <img src="./resources/img/svg/rouble.svg" alt="Иконка знак Рубля" />
+                </div>
+                <div class="advantages__title tpg__sub-header-2">Скидка 15%</div>
+                <div class="advantages__content">
+                  Отправьте от 5 посылок, оплаченных онлайн, получите скидку при оформлении на сайте
+                  в следующем месяце
+                </div>
+              </div>
+              <div class="advantages__item background_gray">
+                <div class="advantages__logo">
+                  <img src="./resources/img/svg/payment-done.svg" alt="Иконка банковская карта" />
+                </div>
+                <div class="advantages__title tpg__sub-header-2">Удобная оплата получателем</div>
+                <div class="advantages__content">Отправляйте товары с оплатой при получении</div>
+              </div>
+              <div class="advantages__item background_gray">
+                <div class="advantages__logo">
+                  <img src="./resources/img/svg/bonus-solid.svg" alt="Иконка Бонус" />
+                </div>
+                <div class="advantages__title tpg__sub-header-2">Почта.Бонус</div>
+                <div class="advantages__content">
+                  Получайте до 10% бонусами от стоимости доставки для оплаты будущих отправлений
+                </div>
+              </div>
+              <div class="advantages__item font-color-invers background_deep-blue">
+                <div class="advantages__logo">
+                  <img src="./resources/img/svg/phone-done.svg" alt="Иконка Телефона" />
+                </div>
+                <div class="advantages__title tpg__sub-header-2">Выделенная линия поддержки</div>
+                <div class="advantages__content tpg__regular-22">profisupport@russianpost.ru 8 800 100-23-03 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="background_gray">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__links">
+            <div class="footer__private">
+              <div class="footer__title tpg__bold-16">Частным лицам</div>
+              <ul class="footer__links-list">
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Отследить отправление</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Оплатить услуги и переводы</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Отправить письмо</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Подписаться на газету или журнал</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Отправить посылку</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Электронные заказные письма</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Массовая отправка посылок</a>
+                </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Вызвать курьера</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__business">
+              <div class="footer__title tpg__bold-16">Бизнесу</div>
+              <ul class="footer__links-list">
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Отправка писем и посылок</a>
+                </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Реклама в отделениях</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Обслуживание в вашем офисе</a>
+                  </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Индеграция с вашими приложениями (API)</a>
+                </li>
+                <li class="footer__links-item">
+                  <a class="tpg__regular-14" href="#">Денежные переводы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__app-stores">
+            <div class="footer__app-stores-list">
+              <a class="footer__app-stores-item" href="#">
+                <img loading="lazy" src="./resources/img/assets/app-stores/AppGallery-bage.webp" alt="Иконка AppGallery">
+              </a>
+              <a class="footer__app-stores-item" href="#">
+                <img loading="lazy" src="./resources/img/assets/app-stores/RuStore-bage.webp" alt="Иконка RuStore">
+              </a>
+              <a class="footer__app-stores-item" href="#">
+                <img loading="lazy" src="./resources/img/assets/app-stores/Apple-store-bage.webp" alt="Иконка AppStore">
+              </a>
+              <a class="footer__app-stores-item" href="#">
+                <img loading="lazy" src="./resources/img/assets/app-stores/Apple-store-bage.webp" alt="Иконка GooglePlay">
+              </a>
+            </div>
+          </div>
+          <nav class="footer__about">
+            <ul class="footer__about-list">
+              <li class="footer__about-item">
+                <a class="tpg__regular-14" href="#">О компании</a>
+              </li>
+              <li class="footer__about-item">
+                <a class="tpg__regular-14" href="#">Раскрытие информации</a>
+              </li>
+              <li class="footer__about-item">
+                <a class="tpg__regular-14" href="#">Вакансии</a>
+              </li>
+              <li class="footer__about-item">
+                <a class="tpg__regular-14" href="#">Новости</a>
+              </li>
+              <li class="footer__about-item">
+                <a class="tpg__regular-14" href="#">Программа обновления сети</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="decoration__border decoration__border_footer"></div>
+          <div class="footer__bottom">
+            <div class="footer__left-list">
+              <div class="footer__left-item tpg__regular-14">2024 © АО «Почта России»</div>
+              <div class="footer__left-item"><a class="tpg__regular-14" href="#">Отделения</a></div>
+              <div class="footer__left-item"><a class="tpg__regular-14" href="#">Помощь</a></div>
+            </div>
+            <div class="footer__right-list">
+              <div class="footer__socials-list">
+                <div class="footer__socials-item">
+                  <a href="#">
+                    <img loading="lazy" src="./resources/img/svg/VK.svg" alt="Ссылка вконтакте">
+                  </a>
+                </div>
+                <div class="footer__socials-item">
+                  <a href="#">
+                    <img loading="lazy" src="./resources/img/svg/OK.svg" alt="Ссылка однокласники">
+                  </a>
+                </div>
+                <div class="footer__socials-item">
+                  <a href="#">
+                    <img loading="lazy" src="./resources/img/svg/Telegram.svg" alt="ссылка телеграмм">
+                  </a>
+                </div>
+                <div class="footer__socials-item">
+                  <a href="#">
+                    <img loading="lazy" src="./resources/img/svg/Telegram.svg" alt="ссылка телеграмм">
+                  </a>
+                </div>
+              </div>
+              <div class="footer__language">
+                <button class="footer__language-btn tpg__regular-14">English</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+  </body>
 </html>

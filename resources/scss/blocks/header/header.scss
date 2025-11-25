@@ -1,0 +1,29 @@
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  &__left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+}

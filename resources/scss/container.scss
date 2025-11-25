@@ -1,0 +1,7 @@
+.container {
+  width: 1160px;
+  margin-inline: auto;
+  &__advantages_transform {
+    transform: translateY(-175px);
+  }
+}

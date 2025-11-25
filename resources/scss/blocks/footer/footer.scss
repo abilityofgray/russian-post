@@ -1,0 +1,115 @@
+@use '../../variables.scss' as *;
+@use '../../mixins.scss' as *;
+
+.footer {
+  padding-block: 24px;
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__links-list {
+    columns: 2;
+  }
+  &__links-item {
+    margin-bottom: 16px;
+
+    &:hover {
+      a {
+        color: #9a9795;
+      }
+    }
+  }
+  &__about-item {
+    &:hover {
+      a {
+        color: #9a9795;
+      }
+    }
+  }
+  &__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 16px;
+  }
+  &__private {
+    border-right: 1px solid var(--color-stroke-neutralA-light);
+    padding-right: 24px;
+  }
+  &__business {
+    padding-left: 24px;
+  }
+  &__app-stores {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  &__app-stores-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  &__app-stores-item {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 140px;
+    height: 44px;
+  }
+  a {
+    color: #343332;
+    @include animate(color);
+    &:visited {
+      color: #343332;
+    }
+  }
+  &__about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  &__about-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  &__left-item {
+    color: var(--color-text-neutralA-meduim);
+    a {
+      color: var(--color-text-neutralA-meduim);
+    }
+  }
+  &__right-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  &__socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  &__socials-item {
+    width: 24px;
+    height: 24px;
+  }
+  &__language-btn {
+    color: var(--color-text-neutralA-meduim);
+  }
+}

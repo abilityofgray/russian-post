@@ -1,0 +1,38 @@
+@use './variables.scss' as *;
+@use './fonts.scss' as *;
+
+.tpg {
+  &__accent {
+    color: var(--color-accent);
+  }
+  &__btn {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  &__header {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  &__sub-header-2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  &__bold-16 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__regular-14 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  &__regular-22 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}

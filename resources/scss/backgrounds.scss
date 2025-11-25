@@ -1,0 +1,16 @@
+@use './variables.scss' as *;
+
+.background {
+  &_gray {
+    background-color: #f0f4ff;
+  }
+  &_blue {
+    background-color: var(--color-banner-main);
+  }
+  &_accent {
+    background-color: var(--color-accent);
+  }
+  &_deep-blue {
+    background-color: var(--color-deep-blue);
+  }
+}

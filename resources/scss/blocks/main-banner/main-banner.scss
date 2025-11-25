@@ -1,0 +1,19 @@
+.main-banner {
+  height: 600px;
+  padding-top: 18px;
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    width: 558px;
+    height: 480px;
+  }
+  &__content {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+}

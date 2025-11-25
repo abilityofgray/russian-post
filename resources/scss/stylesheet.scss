@@ -1,2 +1,15 @@
 @use './reset.scss';
 @use './variables.scss';
+@use './container.scss';
+@use './typography.scss';
+@use './backgrounds.scss';
+@use './decoration.scss';
+@use './mixins.scss';
+@use './fonts.scss';
+@use './block.scss';
+
+@use './blocks/header/header.scss';
+@use './blocks/footer/footer.scss';
+@use './blocks/main-banner/main-banner.scss';
+@use './blocks/advantages/advantages.scss';
+@use './blocks/buttons/button.scss';

@@ -1,0 +1,17 @@
+@use '../../variables.scss' as *;
+@use '../../mixins.scss' as *;
+
+.button {
+  background-color: var(--color-button-bg);
+  border-radius: var(--border-radius-btn);
+  padding-inline: 20px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include animate(background-color);
+  &:hover {
+    background-color: var(--color-button-bg-hover);
+  }
+}
