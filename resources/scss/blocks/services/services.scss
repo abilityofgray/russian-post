@@ -1,11 +1,37 @@
+@use '../../variables.scss' as *;
+
 .services {
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 370px);
-    grid-template-rows: 282px;
+    grid-template-columns: auto;
     gap: 24px;
+    // @media (min-width: $tablet) {
+    //   grid-template-columns: repeat(1, 1fr);
+    // }
+    @media (min-width: $tablet) {
+      grid-template-columns: repeat(3, 370px);
+      grid-template-rows: 282px;
+    }
+  }
+  &__item {
+    gap: 15px;
+    @media (min-width: $tablet) {
+      gap: 0;
+    }
   }
   &__item-title {
-    min-height: 72px;
+    @media (min-width: $tablet) {
+      min-height: 72px;
+    }
+  }
+  &__list-wrap {
+    @media (min-width: $tablet) {
+      overflow-y: auto;
+      margin-right: -19px;
+      padding-bottom: 10px;
+    }
+    @media (min-width: $desktop-HD) {
+      overflow-y: none;
+    }
   }
 }

@@ -1,0 +1,56 @@
+@use '../../mixins.scss' as *;
+@use '../../variables.scss' as *;
+
+.faq {
+  &__item-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    span:first-child {
+      padding-right: 15px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 48px;
+    // row-gap: 56px;
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__item {
+    min-height: 100px;
+  }
+  &__chevron {
+    // padding-left: 15px;
+    flex-shrink: 0;
+  }
+}
+.faq__item-content {
+  max-height: 0;
+  overflow: hidden;
+  padding-inline: 10px;
+  @include animate(all);
+}
+.faq__item input {
+  display: none;
+}
+.faq__item input:checked ~ .faq__item-content {
+  max-height: 100px;
+  padding-block: 5px;
+}
+.faq__chevron {
+  @include animate(transform);
+}
+.faq__item input:checked ~ .faq__item-title .faq__chevron {
+  transform: rotate(180deg);
+}

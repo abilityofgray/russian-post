@@ -14,50 +14,75 @@
 
     &:hover {
       a {
-        color: #9a9795;
+        color: var(--color-button-bg);
       }
     }
   }
   &__about-item {
     &:hover {
       a {
-        color: #9a9795;
+        color: var(--color-button-bg);
       }
     }
   }
   &__links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     margin-bottom: 16px;
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__private {
-    border-right: 1px solid var(--color-stroke-neutralA-light);
-    padding-right: 24px;
+    border-bottom: 1px solid var(--color-stroke-neutralA-light);
+    padding-bottom: 15px;
+    @media (min-width: $tablet) {
+      padding-bottom: 0;
+      padding-right: 24px;
+      border-bottom: none;
+      border-right: 1px solid var(--color-stroke-neutralA-light);
+    }
   }
   &__business {
-    padding-left: 24px;
+    padding-top: 15px;
+    @media (min-width: $tablet) {
+      padding-top: 0;
+      padding-left: 24px;
+    }
   }
   &__app-stores {
     padding-top: 24px;
     padding-bottom: 32px;
   }
   &__app-stores-list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 16px;
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &__app-stores-item {
-    flex-shrink: 0;
-    flex-grow: 0;
-    width: 140px;
-    height: 44px;
+    width: 100%;
+    height: auto;
+    @media (min-width: $tablet) {
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: 140px;
+      height: 44px;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
   a {
     color: #343332;
     @include animate(color);
-    &:visited {
-      color: #343332;
-    }
+    // &:visited {
+    //   color: #343332;
+    // }
   }
   &__about {
     display: flex;
@@ -69,15 +94,23 @@
   &__about-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 16px;
+    @media (min-width: $tablet) {
+    }
   }
   &__bottom {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
+    @media (min-width: $tablet) {
+      gap: 0;
+      flex-direction: row;
+    }
   }
   &__left-list {
     display: flex;

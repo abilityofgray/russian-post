@@ -7,71 +7,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./resources/scss/stylesheet.css" />
   </head>
   <body>
     <header>
-      <!--
-      <img loading="lazy" src="./resources/img/assets/header_fake.webp" alt="Хэдэр" />
-      -->
       <div class="container">
         <nav class="nav-top">
           <div class="nav-top__left">
-            <div class="nav-top__item">
-              <div class="nav-top__menu"></div>
+            <button class="nav-top__menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm2 9a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm4 5a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0-14a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm2 9a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm6 7a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm0-14a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm-2 5a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <div class="nav-top__item logo-wrap">
+              <svg viewBox="0 0 260 36" xmlns="http://www.w3.org/2000/svg" class="logo" style="display: block;"><g><path d="M21.3705 0.768402V35.4314H15.5989V5.74891H5.78273V35.4314H0V0.768402H21.3705Z" fill="currentColor"></path><path d="M28.6575 34.0607C26.9239 32.4706 25.6663 30.4299 25.0251 28.1666C24.0859 24.997 23.6498 21.6997 23.7327 18.395C23.6526 15.0062 24.0884 11.6249 25.0251 8.36712C25.6613 6.03752 26.9165 3.9237 28.6575 2.25014C30.1834 0.944504 32.1255 0.227005 34.1338 0.227005C36.142 0.227005 38.0842 0.944504 39.6101 2.25014C41.349 3.90379 42.5981 6.00496 43.2202 8.32256C44.1508 11.5816 44.5865 14.962 44.5127 18.3504C44.5965 21.6735 44.1604 24.9893 43.2202 28.1777C42.5967 30.4403 41.3451 32.4801 39.6101 34.0607C38.059 35.321 36.1213 36.009 34.1227 36.009C32.1241 36.009 30.1863 35.321 28.6352 34.0607H28.6575ZM30.0837 25.303C30.311 26.7884 30.8668 28.2045 31.7104 29.4479C31.9754 29.8512 32.3334 30.1851 32.754 30.4217C33.1747 30.6581 33.6459 30.7904 34.1282 30.8073C35.5544 30.8073 36.6798 29.7711 37.4709 27.6763C38.4483 24.6836 38.8859 21.5409 38.7633 18.395C38.7982 15.9837 38.6118 13.5744 38.2062 11.1972C37.9599 9.65104 37.3904 8.17423 36.5349 6.86295C36.2795 6.43873 35.9229 6.0844 35.4971 5.83165C35.0714 5.57888 34.5895 5.43555 34.0948 5.41448C33.609 5.44164 33.1373 5.588 32.7215 5.84061C32.3057 6.09323 31.9585 6.44434 31.7104 6.86295C30.8663 8.18788 30.312 9.67629 30.0837 11.2307C29.6597 13.6019 29.4657 16.0087 29.5043 18.4173C29.4667 20.7261 29.6609 23.033 30.0837 25.303Z" fill="currentColor"></path><path d="M60.3679 0.768402V14.0609H57.3151C56.2016 14.1076 55.0923 13.8979 54.0727 13.4481C53.2667 13.0241 52.6501 12.3119 52.3456 11.4536C51.9354 10.2652 51.7502 9.01077 51.7997 7.75448V0.768402H46.0281V7.75448C45.8544 10.7775 46.7541 13.7648 48.5685 16.189C50.2621 18.2317 52.7913 19.2531 56.1562 19.2531H60.3679V35.4314H66.1507V0.768402H60.3679Z" fill="currentColor"></path><path d="M87.8986 5.74891H81.1019V35.4314H75.3525V5.74891H68.567V0.768402H87.8986V5.74891Z" fill="currentColor"></path><path d="M96.1149 0.768491H100.739C102.639 0.693701 104.52 1.18212 106.143 2.1724C107.572 3.13323 108.681 4.49891 109.33 6.0944C110.129 8.07112 110.632 10.1548 110.822 12.2782L113.519 35.4315H107.748L105.864 19.2532H96.1149V35.4315H90.3436V0.768491H96.1149ZM96.1149 14.2727H105.296L105.029 12.2782C104.927 10.9988 104.665 9.73737 104.249 8.52337C103.954 7.70774 103.383 7.02154 102.633 6.58465C101.661 6.12332 100.589 5.91265 99.5133 5.97184H96.1149V14.2727Z" fill="currentColor"></path><path d="M137.449 0.768612C139.375 0.72244 141.275 1.22063 142.931 2.20594C144.555 3.23931 145.819 4.74923 146.552 6.52906C147.477 8.79321 147.918 11.2262 147.844 13.6711C147.898 15.9914 147.485 18.2989 146.63 20.4566C145.992 22.102 144.972 23.5722 143.655 24.7463C142.742 25.6006 141.56 26.109 140.312 26.1836C139.67 26.225 139.025 26.1235 138.427 25.8866C137.827 25.6495 137.288 25.283 136.848 24.8132V35.4316H131.076V0.768612H137.449ZM137.192 18.763C137.339 19.3816 137.633 19.9552 138.051 20.4344C138.188 20.5993 138.357 20.7339 138.549 20.8299C138.741 20.9258 138.951 20.9808 139.165 20.9915C139.669 20.9633 140.143 20.7442 140.491 20.3787C141.023 19.8129 141.406 19.1237 141.604 18.3731C141.926 17.2203 142.073 16.026 142.039 14.8299C142.039 11.5913 141.646 9.30339 140.859 7.96639C140.526 7.34992 140.029 6.83738 139.424 6.48541C138.818 6.13345 138.127 5.95575 137.427 5.97196H136.848V15.9998C136.837 16.9323 136.954 17.8618 137.192 18.763Z" fill="currentColor"></path><path d="M154.273 34.0614C152.536 32.4743 151.277 30.4325 150.641 28.1673C149.697 24.9984 149.257 21.701 149.337 18.3956C149.259 15.0062 149.698 11.6247 150.641 8.36777C151.271 6.03573 152.527 3.92046 154.273 2.25078C155.775 0.915719 157.723 0.192179 159.732 0.222925C161.75 0.189375 163.708 0.9083 165.226 2.23963C166.97 3.90403 168.223 6.01645 168.847 8.34548C169.773 11.6052 170.205 14.9855 170.128 18.3734C170.208 21.68 169.779 24.9794 168.858 28.1561C168.23 30.4167 166.979 32.4553 165.248 34.0391C163.688 35.3423 161.709 36.0352 159.677 35.989C157.703 36.0091 155.788 35.3258 154.273 34.0614ZM155.688 25.3037C155.926 26.7863 156.481 28.2001 157.315 29.4486C157.58 29.8512 157.938 30.1846 158.358 30.4211C158.78 30.6575 159.251 30.7901 159.732 30.8079C161.17 30.8079 162.284 29.7716 163.075 27.677C164.034 24.6808 164.452 21.5382 164.312 18.3956C164.349 15.9838 164.159 13.5739 163.744 11.1978C163.527 9.66135 162.996 8.18589 162.184 6.86359C161.945 6.42656 161.593 6.06187 161.164 5.80781C160.736 5.55376 160.247 5.41969 159.749 5.41969C159.251 5.41969 158.762 5.55376 158.333 5.80781C157.906 6.06187 157.553 6.42656 157.315 6.86359C156.479 8.19261 155.925 9.67927 155.688 11.2312C155.274 13.6038 155.083 16.0098 155.119 18.4179C155.084 20.7262 155.275 23.0324 155.688 25.3037Z" fill="currentColor"></path><path d="M174.129 8.61255C175.55 6.01873 177.769 3.95191 180.457 2.71839C183.595 1.34742 186.995 0.681812 190.418 0.76853V5.97188C186.317 5.97188 183.175 7.01181 180.992 9.09161C178.763 11.1641 177.716 14.2727 177.716 18.3952C177.716 22.5178 178.83 25.3368 180.98 27.3089C183.131 29.2811 186.295 30.2616 190.418 30.2616V35.4649C184.523 35.4649 179.955 34.0388 176.747 31.1864C173.538 28.334 171.933 24.0889 171.933 18.4287C171.811 15.0226 172.567 11.6423 174.129 8.61255Z" fill="currentColor"></path><path d="M193.571 8.61255C194.992 6.01873 197.211 3.95191 199.9 2.71839C203.037 1.34742 206.437 0.681812 209.861 0.76853V5.97188C205.76 5.97188 202.618 7.01181 200.434 9.09161C198.206 11.1641 197.158 14.2727 197.158 18.3952C197.158 22.5178 198.272 25.3368 200.423 27.3089C202.573 29.2811 205.738 30.2616 209.861 30.2616V35.4649C203.967 35.4649 199.398 34.0388 196.189 31.1864C192.98 28.334 191.409 24.0555 191.409 18.3952C191.283 15.0033 192.026 11.6354 193.571 8.61255Z" fill="currentColor"></path><path d="M218.35 0.768333V13.1471L228.177 4.86861L233.927 0.032959V35.4647H228.177V11.8436L218.361 20.1221V35.4313H212.579V0.768333H218.35Z" fill="currentColor"></path><path d="M242.43 0.768333V13.1471L252.257 4.86861L258.007 0.032959V35.4647H252.235V11.8436L242.407 20.1221V35.4313H236.635V0.768333H242.43Z" fill="currentColor"></path></g></svg>
             </div>
-            <div class="nav-top__item">
-              <img loading="lazy" src="" alt="Логотип Почта России" />
-            </div>
-            <div class="nav-top__item">
-              <a class="nav-top__link active" href="#">Частным лицам</a>
-              <a class="nav-top__link" href="#">Бизнесу</a>
+            <div class="nav-top__item nav-top__item-selected">
+              <a class="nav-top__link active tpg__top-nav" href="#">Частным лицам</a>
+              <a class="nav-top__link tpg__top-nav" href="#">Бизнесу</a>
             </div>
           </div>
           <div class="nav-top__right">
             <div class="nav-top__item">
-              <svg class="nav-top__icon">
-                <use></use>
-              </svg>
-              <a href="nav-top_link">Отделения</a>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-top__icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.796 12.738L12 20.274l-4.796-7.537C4.795 8.953 7.514 4 12 4c4.486 0 7.205 4.953 4.796 8.738zM5.516 13.81C2.26 8.695 5.936 2 12 2s9.74 6.695 6.484 11.811l-4.797 7.538a2 2 0 01-3.374 0L5.516 13.81zM12 12a2 2 0 100-4 2 2 0 000 4z" fill="currentColor"></path></svg>
+              <a href="nav-top_link tpg__top-nav">Отделения</a>
             </div>
             <div class="nav-top__item">
-              <svg class="nav-top__icon">
-                <use></use>
-              </svg>
-              <a href="nav-top_link">Помощь</a>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-top__icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 20a8 8 0 100-16 8 8 0 000 16zm0 2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm1.25-5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zm.397-10.294a3.683 3.683 0 00-4.941 1.647l-.1.2a1 1 0 001.788.894l.1-.2a1.684 1.684 0 012.259-.753l.11.056c.254.127.46.333.587.587a.85.85 0 01-.216 1.033l-1.155.962A3 3 0 0011 13.437v.063a1 1 0 102 0v-.063a1 1 0 01.36-.768l1.155-.963a2.85 2.85 0 00.724-3.464 3.313 3.313 0 00-1.481-1.481l-.11-.055z" fill="currentColor"></path></svg>
+              <a href="nav-top_link tpg__top-nav">Помощь</a>
             </div>
             <div class="nav-top__item">
-              <svg class="nav-top__icon">
-                <use></use>
-              </svg>
-              <a href="nav-top_link">Войти</a>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-top__icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.932 17.368a8 8 0 10-11.894-.034C7.433 15.86 9.752 15 12 15c2.112 0 4.493.986 5.932 2.368zM12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm3.5-12a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z" fill="currentColor"></path></svg>
+              <a href="nav-top_link tpg__top-nav">Войти</a>
             </div>
           </div>
+          <div class="nav-top__right_mobile">
+          </div>
         </nav>
-        <div class="decoration__border"></div>
+      </div>
+      <div class="decoration__border"></div>
+      <div class="container">
         <nav class="nav-links">
           <ul class="nav-links__list">
             <li class="nav-links__item">
-              <a href="#">Отправить</a>
+              <a class="tpg__top-nav" href="#">Отправить</a>
             </li>
             <li class="nav-links__item">
-              <a href="#">Получить</a>
+              <a class="tpg__top-nav" href="#">Получить</a>
             </li>
             <li class="nav-links__item">
-              <a href="#">Платежи и переводы</a>
+              <a class="tpg__top-nav" href="#">Платежи и переводы</a>
             </li>
             <li class="nav-links__item">
-              <a href="#">Услуги в отделениях</a>
+              <a class="tpg__top-nav" href="#">Услуги в отделениях</a>
             </li>
             <li class="nav-links__item">
-              <a href="#">Онлайн-сервисы</a>
+              <a class="tpg__top-nav" href="#">Онлайн-сервисы</a>
             </li>
           </ul>
-          <div class="nav-links__search">Поиск</div>
+          <button class="tpg__top-nav nav-links__search">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0" role="button" class="nav-links__search-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 10a5 5 0 11-10 0 5 5 0 0110 0zm-.87 5.653a7 7 0 111.524-1.524l4.997 4.23a1.627 1.627 0 11-2.293 2.291l-4.229-4.997z" fill="currentColor"></path></svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -330,37 +328,38 @@
       <section class="section__services section__padding">
         <div class="container">
           <div class="section__title tpg__header">Дополнительные услуги</div>
-          <div class="services__list">
-             <div class="card services__item background_gray">
-              <div class="card__content">
-                <div class="card__title services__item-title tpg__sub-header">Маркировка хрупких вещей</div>
-                <div class="card__text tpg__main-1">Отправляйте хрупкие вещи с пометкой «Осторожно». Такие отправления доставляют с особой бережностью.</div>
-              </div>
-              <div class="card__bth-detailed">
-                <a class="button__detailed" href="#">Подробнее</a>
-              </div>
-            </div>
-             <div class="card services__item background_gray">
-              <div class="card__content">
-                <div class="card__title services__item-title tpg__sub-header">Упаковочные материалы</div>
-                <div class="card__text tpg__main-1">Купите упаковку в отделении или используйте бесплатные пакеты и конверты для курьерских отправлений.</div>
-              </div>
-              <div class="card__bth-detailed">
-                <a class="button__detailed" href="#">Подробнее</a>
-              </div>
-            </div>
-             <div class="card services__item background_gray">
-              <div class="services__item-title card__content">
-                <div class="card__title services__item-title tpg__sub-header">Опись вложения </div>
-                <div class="card__text tpg__main-1">Вызовите курьера, если нет времени отнести отправление в отделение или получить посылку.</div>
-              </div>
-              <div class="card__bts-array">
+          <div class="services__list-wrap">
+            <div class="services__list">
+              <div class="card services__item background_gray">
+                <div class="card__content">
+                  <div class="card__title services__item-title tpg__sub-header">Маркировка хрупких вещей</div>
+                  <div class="card__text tpg__main-1">Отправляйте хрупкие вещи с пометкой «Осторожно». Такие отправления доставляют с особой бережностью.</div>
+                </div>
                 <div class="card__bth-detailed">
                   <a class="button__detailed" href="#">Подробнее</a>
                 </div>
-                <button class="button">Оформить</button>
               </div>
-             
+              <div class="card services__item background_gray">
+                <div class="card__content">
+                  <div class="card__title services__item-title tpg__sub-header">Упаковочные материалы</div>
+                  <div class="card__text tpg__main-1">Купите упаковку в отделении или используйте бесплатные пакеты и конверты для курьерских отправлений.</div>
+                </div>
+                <div class="card__bth-detailed">
+                  <a class="button__detailed" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="card services__item background_gray">
+                <div class="services__item-title card__content">
+                  <div class="card__title services__item-title tpg__sub-header">Опись вложения </div>
+                  <div class="card__text tpg__main-1">Вызовите курьера, если нет времени отнести отправление в отделение или получить посылку.</div>
+                </div>
+                <div class="card__bts-array">
+                  <div class="card__bth-detailed">
+                    <a class="button__detailed" href="#">Подробнее</a>
+                  </div>
+                  <button class="button">Оформить</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -377,10 +376,241 @@
               </div>
               <p class="support__description tpg__paragraph-m">Позвоните или напишите нам, и мы подробно ответим на них: </p>
               <div class="support__contacts">
-                <a class="tpg__paragraph-xl" href="tel:88001002303">8 800 100-23-03</a>
+                <a class="tpg__paragraph-xl" href="tel:+78001002303">8 800 100-23-03</a>
                 <a class="tpg__paragraph-xl" href="mailto:profisupport@russianpost.ru">profisupport@russianpost.ru</a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__faq">
+        <div class="container">
+          <div class="section__title tpg__header">Часто задаваемые вопросы и ответы</div>
+          <div class="faq__section">
+            <div class="faq__title tpg__line-bold-xl">Обшие вопросы</div>
+            <ul class="faq__list">
+              <li class="faq__item">
+                <input type="checkbox" id="item1">
+                <label for="item1" class="faq__item-title">
+                  <span>Как оформить посылку через сайт?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item2">
+                <label for="item2" class="faq__item-title">
+                  <span>Зачем нужно оценивать посылку?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item3">
+                <label for="item3" class="faq__item-title">
+                  <span>От чего зависит стоимость посылки?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item4">
+                <label for="item4" class="faq__item-title">
+                  <span>Что даёт бонусная программа Почта.Бонус?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item5">
+                <label for="item5" class="faq__item-title">
+                  <span>Какие виды посылок я могу отправить?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item6">
+                <label for="item6" class="faq__item-title">
+                  <span>Могу я сдать посылку без очереди?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="faq__section">
+            <div class="faq__title tpg__line-bold-xl">Для тех, кто отправляет часто</div>
+            <ul class="faq__list">
+              <li class="faq__item">
+                <input type="checkbox" id="item8">
+                <label for="item8" class="faq__item-title">
+                  <span>Нужно ли заключать договор для получения скидки?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item9">
+                <label for="item9" class="faq__item-title">
+                  <span>Начисляются ли бонусы при получении скидки?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item10">
+                <label for="item10" class="faq__item-title">
+                  <span>Как получить скидку для частых отправителей?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item11">
+                <label for="item11" class="faq__item-title">
+                  <span>Доступны ли дополнительные услуги при отправлении посылки?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item12">
+                <label for="item12" class="faq__item-title">
+                  <span>Какие посылки учитываются для получения скидки?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item13">
+                <label for="item13" class="faq__item-title">
+                  <span>Входит ли упаковка в стоимость отправления?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item14">
+                <label for="item14" class="faq__item-title">
+                  <span>Можно ли оформить посылки со скидкой через оператора в отделении?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item15">
+                <label for="item15" class="faq__item-title">
+                  <span>Можно ли отправить посылку со скидкой за границу?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item16">
+                <label for="item16" class="faq__item-title">
+                  <span>Можно ли получить скидку на 6-е отправление в текущем месяце?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item17">
+                <label for="item17" class="faq__item-title">
+                  <span>Могу ли я вызвать курьера для отправки посылки?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item18">
+                <label for="item18" class="faq__item-title">
+                  <span>Доступна ли скидка для индивидуальных предпринимателей и самозанятых?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+              <li class="faq__item">
+                <input type="checkbox" id="item19">
+                <label for="item19" class="faq__item-title">
+                  <span>Может ли посылку оплатить получатель?</span>
+                  <span class="faq__chevron">
+                    <img src="./resources/img/svg/chevron-down.svg" alt="">
+                  </span>
+                </label>
+                <div class="faq__item-content">
+                  <div>Текст внутри элемента Ответы вопросы</div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -442,16 +672,16 @@
           <div class="footer__app-stores">
             <div class="footer__app-stores-list">
               <a class="footer__app-stores-item" href="#">
-                <img loading="lazy" src="./resources/img/assets/app-stores/AppGallery-bage.webp" alt="Иконка AppGallery">
+                <img loading="lazy" src="./resources/img/svg/AppGallery-bage.svg" alt="Иконка AppGallery">
               </a>
               <a class="footer__app-stores-item" href="#">
-                <img loading="lazy" src="./resources/img/assets/app-stores/RuStore-bage.webp" alt="Иконка RuStore">
+                <img loading="lazy" src="./resources/img/svg/RuStore-bage.svg" alt="Иконка RuStore">
               </a>
               <a class="footer__app-stores-item" href="#">
-                <img loading="lazy" src="./resources/img/assets/app-stores/Apple-store-bage.webp" alt="Иконка AppStore">
+                <img loading="lazy" src="./resources/img/svg/Apple-store-bage.svg" alt="Иконка AppStore">
               </a>
               <a class="footer__app-stores-item" href="#">
-                <img loading="lazy" src="./resources/img/assets/app-stores/Apple-store-bage.webp" alt="Иконка GooglePlay">
+                <img loading="lazy" src="./resources/img/svg/Google-play-bage.svg" alt="Иконка GooglePlay">
               </a>
             </div>
           </div>

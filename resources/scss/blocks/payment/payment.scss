@@ -1,12 +1,29 @@
+@use '../../variables.scss' as *;
+
 .payment {
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 370px);
-    grid-template-rows: 202px 287px;
+    grid-template-columns: auto;
     gap: 24px;
+    @media (min-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      // grid-template-rows: 202px 287px;
+    }
+    @media (min-width: $desktop-HD) {
+      grid-template-columns: repeat(3, 370px);
+      grid-template-rows: 202px 287px;
+    }
   }
   &__item-row-span {
     grid-row: span 2;
+  }
+  &__text {
+    @media (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+    @media (min-width: $desktop) {
+      margin-bottom: 0px;
+    }
   }
   &__content {
     display: flex;

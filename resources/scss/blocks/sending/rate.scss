@@ -1,15 +1,27 @@
+@use '../../variables.scss' as *;
+
 .rate {
   border-radius: var(--border-radius-card);
   padding-top: 24px;
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 24px;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
+    // @media (min-width: $desktop) {
+    //   flex-direction: row;
+    // }
   }
   &__item {
-    width: 370px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (min-width: $tablet) {
+      width: 370px;
+    }
   }
   &__description {
     margin-bottom: 24px;
