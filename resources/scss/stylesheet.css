@@ -446,6 +446,14 @@ nav a:hover.active {
 
 .logo-wrap {
   width: 123px;
+  height: 20px;
+}
+.logo-wrap svg {
+  width: 123px;
+  height: 20px;
+  max-width: 100%;
+  height: auto;
+  transform: translate3d(0, 0, 0);
 }
 
 header .decoration__border {
@@ -710,6 +718,17 @@ header .decoration__border {
     flex-wrap: wrap;
   }
 }
+.advantages__support {
+  display: flex;
+  flex-direction: column;
+}
+.advantages__support a {
+  color: #fff;
+}
+.advantages__support a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
 .advantages__item {
   padding: 10px;
   height: auto;
@@ -890,6 +909,12 @@ header .decoration__border {
 .payment__content {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .payment__content {
+    margin-bottom: 0px;
+  }
 }
 .payment__item {
   border-radius: var(--border-radius-card);
@@ -1015,6 +1040,9 @@ header .decoration__border {
   color: #fff;
 }
 .support__content a {
+  color: #fff;
+}
+.support a {
   color: #fff;
 }
 .support__title {

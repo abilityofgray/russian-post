@@ -126,7 +126,15 @@ nav {
 }
 .logo-wrap {
   width: 123px;
-  // height: 36px;
+  height: 20px;
+  // color: rgb(26, 52, 232);
+  svg {
+    width: 123px;
+    height: 20px;
+    max-width: 100%;
+    height: auto;
+    transform: translate3d(0, 0, 0);
+  }
 }
 header {
   .decoration__border {
