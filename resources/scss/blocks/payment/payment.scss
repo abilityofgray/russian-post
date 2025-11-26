@@ -1,0 +1,34 @@
+.payment {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 202px 287px;
+    gap: 24px;
+  }
+  &__item-row-span {
+    grid-row: span 2;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    border-radius: var(--border-radius-card);
+    padding: 26px 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__cover {
+    margin-bottom: 38px;
+    border-radius: 4px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

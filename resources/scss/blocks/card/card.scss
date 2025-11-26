@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius-card);
+  padding: 24px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__bts-array {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+}

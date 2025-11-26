@@ -11,7 +11,23 @@
   align-items: center;
   justify-content: center;
   @include animate(background-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
   &:hover {
     background-color: var(--color-button-bg-hover);
+  }
+  &__detailed {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    text-decoration: underline;
+    color: var(--color-button-bg);
+    padding-top: 1px;
+    border-bottom: 1px solid var(--color-button-bg);
+    @include animate(color);
+    &:hover {
+      color: var(--color-button-bg-hover);
+    }
   }
 }

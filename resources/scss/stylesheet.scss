@@ -6,10 +6,16 @@
 @use './decoration.scss';
 @use './mixins.scss';
 @use './fonts.scss';
-@use './block.scss';
+@use './section.scss';
+@use './blocks/buttons/button.scss';
 
 @use './blocks/header/header.scss';
 @use './blocks/footer/footer.scss';
 @use './blocks/main-banner/main-banner.scss';
 @use './blocks/advantages/advantages.scss';
-@use './blocks/buttons/button.scss';
+@use './blocks/sending/sending.scss';
+@use './blocks/sending/rate.scss';
+@use './blocks/payment/payment.scss';
+@use './blocks/card/card.scss';
+@use './blocks/services/services.scss';
+@use './blocks/support/support.scss';

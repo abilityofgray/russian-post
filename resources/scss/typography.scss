@@ -15,6 +15,11 @@
     font-weight: 700;
     line-height: 40px;
   }
+  &__sub-header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+  }
   &__sub-header-2 {
     font-size: 24px;
     font-weight: 700;
@@ -32,6 +37,27 @@
   }
   &__regular-22 {
     font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__main_bold {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  &__main-1 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__paragraph-m {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    font-weight: 400;
+  }
+  &__paragraph-xl {
+    font-size: 24px;
     font-weight: 400;
     line-height: 150%;
   }
